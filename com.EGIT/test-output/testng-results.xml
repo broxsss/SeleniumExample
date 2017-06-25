@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43575" started-at="2017-06-19T08:02:32Z" finished-at="2017-06-19T08:03:15Z">
+  <suite name="Default suite" duration-ms="41207" started-at="2017-06-25T12:25:01Z" finished-at="2017-06-25T12:25:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43575" started-at="2017-06-19T08:02:32Z" finished-at="2017-06-19T08:03:15Z">
-      <class name="com.Git.com.EGIT.TestNaukri">
-        <test-method status="PASS" signature="TestPopUp()[pri:0, instance:com.Git.com.EGIT.TestNaukri@5e5792a0]" name="TestPopUp" duration-ms="43544" started-at="2017-06-19T13:32:32Z" finished-at="2017-06-19T13:33:15Z">
+    <test name="Default test" duration-ms="41207" started-at="2017-06-25T12:25:01Z" finished-at="2017-06-25T12:25:42Z">
+      <class name="com.Git.com.EGIT.robot_upload">
+        <test-method status="PASS" signature="upload()[pri:0, instance:com.Git.com.EGIT.robot_upload@29774679]" name="upload" duration-ms="41171" started-at="2017-06-25T17:55:01Z" finished-at="2017-06-25T17:55:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestPopUp -->
-      </class> <!-- com.Git.com.EGIT.TestNaukri -->
+        </test-method> <!-- upload -->
+      </class> <!-- com.Git.com.EGIT.robot_upload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
