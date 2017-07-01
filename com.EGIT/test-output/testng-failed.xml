@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Git.com.EGIT.robot_upload">
+      <class name="com.Git.com.EGIT.alert">
         <methods>
-          <include name="upload"/>
+          <include name="alerts"/>
         </methods>
-      </class> <!-- com.Git.com.EGIT.robot_upload -->
+      </class> <!-- com.Git.com.EGIT.alert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

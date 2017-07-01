@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41207" started-at="2017-06-25T12:25:01Z" finished-at="2017-06-25T12:25:42Z">
+  <suite name="Default suite" duration-ms="13754" started-at="2017-06-29T16:40:09Z" finished-at="2017-06-29T16:40:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41207" started-at="2017-06-25T12:25:01Z" finished-at="2017-06-25T12:25:42Z">
-      <class name="com.Git.com.EGIT.robot_upload">
-        <test-method status="PASS" signature="upload()[pri:0, instance:com.Git.com.EGIT.robot_upload@29774679]" name="upload" duration-ms="41171" started-at="2017-06-25T17:55:01Z" finished-at="2017-06-25T17:55:42Z">
+    <test name="Default test" duration-ms="13754" started-at="2017-06-29T16:40:09Z" finished-at="2017-06-29T16:40:23Z">
+      <class name="com.Git.com.EGIT.iframes">
+        <test-method status="PASS" signature="frames()[pri:0, instance:com.Git.com.EGIT.iframes@29774679]" name="frames" duration-ms="13722" started-at="2017-06-29T22:10:09Z" finished-at="2017-06-29T22:10:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- upload -->
-      </class> <!-- com.Git.com.EGIT.robot_upload -->
+        </test-method> <!-- frames -->
+      </class> <!-- com.Git.com.EGIT.iframes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
