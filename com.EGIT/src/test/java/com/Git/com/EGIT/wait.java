@@ -1,5 +1,7 @@
 package com.Git.com.EGIT;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.util.HashMap;
@@ -43,10 +45,10 @@ public class wait {
 				// if element found then we will use- In this example I just called isDisplayed method
 			
 		boolean status = false ;
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		status=driver.findElement(By.xpath("//p[text()='QTP']")).isDisplayed();
+	/*	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		status=driver.findElement(By.xpath("//p[text()='QTP']")).isDisplayed();*/
 		status = element.isDisplayed();
-		 Assert.assertEquals(2, 2);
+		 AssertJUnit.assertEquals(2, 2);
 				// if else condition
 				if (status) {
 					System.out.println("===== WebDriver is visible ======");

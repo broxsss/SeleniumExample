@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Git.com.EGIT.alert">
+      <class name="com.Git.com.EGIT.wait">
         <methods>
-          <include name="alerts"/>
+          <include name="allwait"/>
         </methods>
-      </class> <!-- com.Git.com.EGIT.alert -->
+      </class> <!-- com.Git.com.EGIT.wait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
