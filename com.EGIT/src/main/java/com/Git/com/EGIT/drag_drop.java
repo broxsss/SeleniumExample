@@ -1,5 +1,6 @@
 package com.Git.com.EGIT;
 
+import org.testng.annotations.Test;
 import java.awt.AWTException;
 import java.util.HashMap;
 import java.util.Map;

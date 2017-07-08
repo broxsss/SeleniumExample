@@ -1,6 +1,7 @@
 
 package com.Git.com.EGIT;
 
+import org.testng.annotations.Test;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.InputEvent;

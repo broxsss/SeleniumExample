@@ -1,5 +1,6 @@
 package com.Git.com.EGIT;
 
+import org.testng.annotations.Test;
 import java.io.BufferedWriter;		
 import java.io.File;		
 import java.io.FileWriter;		
