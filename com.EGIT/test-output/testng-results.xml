@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22902" started-at="2017-07-05T12:49:12Z" finished-at="2017-07-05T12:49:35Z">
+  <suite name="Default suite" duration-ms="16743" started-at="2017-07-08T15:27:08Z" finished-at="2017-07-08T15:27:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22902" started-at="2017-07-05T12:49:12Z" finished-at="2017-07-05T12:49:35Z">
-      <class name="com.Git.com.EGIT.wait">
-        <test-method status="PASS" signature="allwait()[pri:0, instance:com.Git.com.EGIT.wait@4f7d0008]" name="allwait" duration-ms="22854" started-at="2017-07-05T12:49:12Z" finished-at="2017-07-05T12:49:35Z">
+    <test name="Default test" duration-ms="16743" started-at="2017-07-08T15:27:08Z" finished-at="2017-07-08T15:27:25Z">
+      <class name="com.Git.com.EGIT.drag_drop">
+        <test-method status="PASS" signature="dragNdrop()[pri:0, instance:com.Git.com.EGIT.drag_drop@4f7d0008]" name="dragNdrop" duration-ms="16709" started-at="2017-07-08T20:57:08Z" finished-at="2017-07-08T20:57:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allwait -->
-      </class> <!-- com.Git.com.EGIT.wait -->
+        </test-method> <!-- dragNdrop -->
+      </class> <!-- com.Git.com.EGIT.drag_drop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
