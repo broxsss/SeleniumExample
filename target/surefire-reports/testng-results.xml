@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="386982" started-at="2017-07-05T13:02:23Z" finished-at="2017-07-05T13:08:50Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="386982" started-at="2017-07-05T13:02:23Z" finished-at="2017-07-05T13:08:50Z">
+      <class name="com.Git.com.EGIT.drag_drop">
+        <test-method status="PASS" signature="dragNdrop()[pri:0, instance:com.Git.com.EGIT.drag_drop@234bef66]" name="dragNdrop" duration-ms="23341" started-at="2017-07-05T13:03:14Z" finished-at="2017-07-05T13:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragNdrop -->
+      </class> <!-- com.Git.com.EGIT.drag_drop -->
+      <class name="com.Git.com.EGIT.wait">
+        <test-method status="PASS" signature="allwait()[pri:0, instance:com.Git.com.EGIT.wait@97e1986]" name="allwait" duration-ms="73298" started-at="2017-07-05T13:06:46Z" finished-at="2017-07-05T13:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allwait -->
+      </class> <!-- com.Git.com.EGIT.wait -->
+      <class name="com.Git.com.EGIT.robot_upload">
+        <test-method status="PASS" signature="upload()[pri:0, instance:com.Git.com.EGIT.robot_upload@61dc03ce]" name="upload" duration-ms="46313" started-at="2017-07-05T13:03:38Z" finished-at="2017-07-05T13:04:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload -->
+      </class> <!-- com.Git.com.EGIT.robot_upload -->
+      <class name="com.Git.com.EGIT.multiplewindow">
+        <test-method status="PASS" signature="multiplewindows()[pri:0, instance:com.Git.com.EGIT.multiplewindow@12843fce]" name="multiplewindows" duration-ms="16167" started-at="2017-07-05T13:06:11Z" finished-at="2017-07-05T13:06:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplewindows -->
+      </class> <!-- com.Git.com.EGIT.multiplewindow -->
+      <class name="com.Git.com.EGIT.alert">
+        <test-method status="PASS" signature="alerts()[pri:0, instance:com.Git.com.EGIT.alert@13c78c0b]" name="alerts" duration-ms="42061" started-at="2017-07-05T13:05:29Z" finished-at="2017-07-05T13:06:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alerts -->
+      </class> <!-- com.Git.com.EGIT.alert -->
+      <class name="com.Git.com.EGIT.TestNaukri">
+        <test-method status="PASS" signature="TestPopUp()[pri:0, instance:com.Git.com.EGIT.TestNaukri@735b478]" name="TestPopUp" duration-ms="34755" started-at="2017-07-05T13:02:23Z" finished-at="2017-07-05T13:02:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPopUp -->
+      </class> <!-- com.Git.com.EGIT.TestNaukri -->
+      <class name="com.Git.com.EGIT.robot">
+        <test-method status="PASS" signature="robots()[pri:0, instance:com.Git.com.EGIT.robot@26f67b76]" name="robots" duration-ms="50059" started-at="2017-07-05T13:08:00Z" finished-at="2017-07-05T13:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- robots -->
+      </class> <!-- com.Git.com.EGIT.robot -->
+      <class name="com.Git.com.EGIT.iframes">
+        <test-method status="PASS" signature="frames()[pri:0, instance:com.Git.com.EGIT.iframes@50f8360d]" name="frames" duration-ms="14497" started-at="2017-07-05T13:04:24Z" finished-at="2017-07-05T13:04:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frames -->
+      </class> <!-- com.Git.com.EGIT.iframes -->
+      <class name="com.Git.com.EGIT.AppTest">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.Git.com.EGIT.AppTest@737996a0]" name="testApp" duration-ms="4" started-at="2017-07-05T13:03:38Z" finished-at="2017-07-05T13:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- com.Git.com.EGIT.AppTest -->
+      <class name="com.Git.com.EGIT.BootStrap">
+        <test-method status="PASS" signature="Bootstrapfun()[pri:0, instance:com.Git.com.EGIT.BootStrap@2cb4c3ab]" name="Bootstrapfun" duration-ms="50263" started-at="2017-07-05T13:04:39Z" finished-at="2017-07-05T13:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bootstrapfun -->
+      </class> <!-- com.Git.com.EGIT.BootStrap -->
+      <class name="com.Git.com.EGIT.Chrome">
+        <test-method status="PASS" signature="chorme()[pri:0, instance:com.Git.com.EGIT.Chrome@3dd3bcd]" name="chorme" duration-ms="19399" started-at="2017-07-05T13:06:27Z" finished-at="2017-07-05T13:06:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chorme -->
+      </class> <!-- com.Git.com.EGIT.Chrome -->
+      <class name="com.Git.com.EGIT.addcookies">
+        <test-method status="PASS" signature="cookies()[pri:0, instance:com.Git.com.EGIT.addcookies@9f70c54]" name="cookies" duration-ms="16788" started-at="2017-07-05T13:02:58Z" finished-at="2017-07-05T13:03:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cookies -->
+      </class> <!-- com.Git.com.EGIT.addcookies -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

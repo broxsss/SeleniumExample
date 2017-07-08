@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-public class Encodeafile {/*
+public class Encodeafile {
 	
 	
 	private static String encodeFileToBase64Binary() throws IOException {
@@ -35,4 +35,4 @@ public class Encodeafile {/*
 	    dencodeFileToBase64Binary();
 	}
 
-*/}
+}

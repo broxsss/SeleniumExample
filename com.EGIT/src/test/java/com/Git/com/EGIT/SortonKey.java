@@ -76,8 +76,7 @@ class SortonKey {
 		     format4.setTimeZone(TimeZone.getTimeZone("IST"));
 		     String formatted4 = format4.format(date4);
 		     System.out.println("Date for the linelastupdate:"+formatted4);
-		    String A = "hello";
-		    String[] B=A.split(A, 3);
+		    
 			long epoch1 = new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").parse("2017-05-02T02:56:18.000Z").getTime() / 1000;
 			System.out.println("Time in second for above record :"+epoch1);
 			Date date1 = new Date(epoch1 * 1000L);
@@ -85,10 +84,6 @@ class SortonKey {
 			  format.setTimeZone(TimeZone.getTimeZone("IST"));
 			  String formatted = format.format(date1);
 			  System.out.println(formatted);
-			  for(int o=0 ;o<B.length;o++)
-			  {
-				  System.out.println(B[o]);
-			  }
 		}
 	private static void addValues(String key, String value) {
 		   ArrayList tempList = null;

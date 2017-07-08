@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22902" started-at="2017-07-05T12:49:12Z" finished-at="2017-07-05T12:49:35Z">
+  <suite name="Default suite" duration-ms="13754" started-at="2017-06-29T16:40:09Z" finished-at="2017-06-29T16:40:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22902" started-at="2017-07-05T12:49:12Z" finished-at="2017-07-05T12:49:35Z">
-      <class name="com.Git.com.EGIT.wait">
-        <test-method status="PASS" signature="allwait()[pri:0, instance:com.Git.com.EGIT.wait@4f7d0008]" name="allwait" duration-ms="22854" started-at="2017-07-05T12:49:12Z" finished-at="2017-07-05T12:49:35Z">
+    <test name="Default test" duration-ms="13754" started-at="2017-06-29T16:40:09Z" finished-at="2017-06-29T16:40:23Z">
+      <class name="com.Git.com.EGIT.iframes">
+        <test-method status="PASS" signature="frames()[pri:0, instance:com.Git.com.EGIT.iframes@29774679]" name="frames" duration-ms="13722" started-at="2017-06-29T22:10:09Z" finished-at="2017-06-29T22:10:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allwait -->
-      </class> <!-- com.Git.com.EGIT.wait -->
+        </test-method> <!-- frames -->
+      </class> <!-- com.Git.com.EGIT.iframes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
