@@ -37,11 +37,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <dependencies>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
-<groupId>org.testng</groupId>
-<artifactId>testng</artifactId>
-<version>6.11</version>
-<scope>test</scope>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8</version>
+  <scope>test</scope>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 <dependency>
 <groupId>org.apache.maven.plugins</groupId>
