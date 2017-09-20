@@ -20,6 +20,7 @@ import org.testng.annotations.Test;
 
 public class wait {
 	
+	
 	@Test
 	public void allwait()
 	{

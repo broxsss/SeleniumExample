@@ -22,6 +22,7 @@ class Test1 {
 			Test2 t2 = new Test2(5);
 			
 		}
+		
 	}
 
 

@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 import javax.sql.rowset.WebRowSet;
 
 import org.openqa.selenium.By;
@@ -13,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 public class Chrome {
@@ -25,11 +28,17 @@ public class Chrome {
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions options = new ChromeOptions();
-		WebDriver driver;
+		WebDriver driver ;
 		options.addArguments("--disable-infobars");
-
+         
 		options.setExperimentalOption("prefs", prefs);
 		driver = new ChromeDriver(options); 
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		WebDriverWait wb = new WebDriverWait(driver, 30);
+//		driver.get("http://www.phptravels.net");
+//		
+//		driver.manage().window().maximize();
+//		driver.findElement(By.xpath("//a[@class='dropdown-toggle go-text-right']")).click();;
 		driver.get("https:\\www.facebook.com");
 		driver.manage().window().maximize();
 		WebElement ele =driver.findElement(By.xpath("//*[@id='day']"));

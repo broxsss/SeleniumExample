@@ -37,10 +37,18 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <dependencies>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>6.8</version>
-  <scope>test</scope>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.1.1</version>
+        <scope>compile</scope>
+    </dependency>
+    
+    <dependency>
+            <groupId>atu.testng.reports.ATUReports</groupId>
+            <artifactId>atu-reports</artifactId>
+            <version>5.5_BETA</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ATUTestRecorder.jar</systemPath>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->

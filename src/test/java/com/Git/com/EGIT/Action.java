@@ -7,9 +7,9 @@ package com.Git.com.EGIT;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.Test;
+    import org.openqa.selenium.interactions.Actions;
+    import org.openqa.selenium.remote.DesiredCapabilities;
+    import org.testng.annotations.Test;
 	
 	public class Action {
 		

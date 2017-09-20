@@ -14,6 +14,7 @@ public class Testprop {
 	public static void loaddata() throws IOException
 	{
 		properties = new Properties();
+		System.out.println(System.getProperty("user.dir"));
 		File file = new File(System.getProperty("user.dir")+"\\src\\main\\java\\prop\\test1.properties");
 	    FileReader obj = new FileReader(file);
 	    properties.load(obj);
