@@ -14,9 +14,10 @@ package SeleniumExamples;
 	public class Action {
 		
 	
-	public static void main(String args[]) throws InterruptedException{
+	@Test
+		public void check_action() throws InterruptedException{
 
-		System.setProperty("webdriver.chrome.driver","C:/akshay/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions option = new ChromeOptions();
@@ -35,8 +36,10 @@ package SeleniumExamples;
 		// Type something on Skill textbox
 		driver.get("http://www.google.com");
 			driver.manage().window().maximize();
+			Thread.sleep(5000);
 			Actions act=new Actions(driver);
 			act.contextClick().perform();
+			driver.quit();
 		}
 
 		

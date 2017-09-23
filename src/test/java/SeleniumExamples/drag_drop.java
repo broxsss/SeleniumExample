@@ -52,5 +52,6 @@ public class drag_drop {
 	 
 	// this will drag element to destination
 	act.dragAndDrop(drag, drop).build().perform();
+	driver.quit();
 }
 }

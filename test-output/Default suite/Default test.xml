@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="AKSAINI-AT37S" name="com.Git.com.EGIT.Chrome" tests="1" failures="0" timestamp="16 Sep 2017 21:23:15 GMT" time="14.515" errors="0">
-  <testcase name="chorme" time="14.483" classname="com.Git.com.EGIT.Chrome"/>
+<testsuite hostname="AKSAINI-AT37S" name="SeleniumExamples.Action" tests="1" failures="0" timestamp="21 Sep 2017 10:23:44 GMT" time="19.376" errors="0">
+  <testcase name="check_action" time="19.351" classname="SeleniumExamples.Action"/>
 </testsuite>

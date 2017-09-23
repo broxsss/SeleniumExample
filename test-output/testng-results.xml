@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14515" started-at="2017-09-17T02:53:00Z" finished-at="2017-09-17T02:53:15Z">
+  <suite name="Default suite" duration-ms="19376" started-at="2017-09-21T15:53:25Z" finished-at="2017-09-21T15:53:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14515" started-at="2017-09-17T02:53:00Z" finished-at="2017-09-17T02:53:15Z">
-      <class name="com.Git.com.EGIT.Chrome">
-        <test-method status="PASS" signature="chorme()" name="chorme" duration-ms="14483" started-at="2017-09-17T02:53:00Z" finished-at="2017-09-17T02:53:15Z">
+    <test name="Default test" duration-ms="19376" started-at="2017-09-21T15:53:25Z" finished-at="2017-09-21T15:53:44Z">
+      <class name="SeleniumExamples.Action">
+        <test-method status="PASS" signature="check_action()" name="check_action" duration-ms="19351" started-at="2017-09-21T15:53:25Z" finished-at="2017-09-21T15:53:44Z">
         </test-method>
       </class>
     </test>
