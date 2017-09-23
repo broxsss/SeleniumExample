@@ -1,4 +1,4 @@
-package com.Git.com.EGIT.java8_features;
+package SeleniumExamples;
 
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptEngine;
