@@ -4,8 +4,8 @@
   <test name="Test">
     <classes>
       <class name="com.Git.com.EGIT.TestNaukri"/>
-      <class name="com.Git.com.EGIT.addcookies"/>
-      <!-- <class name="com.Git.com.EGIT.drag_drop"/> -->
+     <!--  <class name="com.Git.com.EGIT.addcookies"/>
+      <class name="com.Git.com.EGIT.drag_drop"/>
       <class name="com.Git.com.EGIT.AppTest"/>
       <class name="com.Git.com.EGIT.robot_upload"/>
       <class name="com.Git.com.EGIT.iframes"/>
@@ -14,7 +14,7 @@
       <class name="com.Git.com.EGIT.multiplewindow"/>
       <class name="com.Git.com.EGIT.Chrome"/>
       <class name="com.Git.com.EGIT.wait"/>
-      <class name="com.Git.com.EGIT.robot"/>
+      <class name="com.Git.com.EGIT.robot"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

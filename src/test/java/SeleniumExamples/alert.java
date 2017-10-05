@@ -1,5 +1,6 @@
 package SeleniumExamples;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,11 +16,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class alert {
-	
+	WebDriver  driver ;
 	@Test
 	public void alerts() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "C:/akshay/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");
 		Map<String,Object> prefs = new HashMap<String,Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions option = new  ChromeOptions();
@@ -27,7 +28,7 @@ public class alert {
 		option.addArguments("--disable-infobars");
 		option.addArguments("--disable-geolocation");
 		option.setExperimentalOption("prefs", prefs);
-		WebDriver  driver = new ChromeDriver(option); 
+		 driver = new ChromeDriver(option); 
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert");
@@ -42,7 +43,15 @@ public class alert {
 	    Thread.sleep(5000);
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
-        driver.quit();
+        //If you have to dismiss
+        driver.switchTo().alert().dismiss();
+        
 		
+	}
+	
+	@AfterTest
+	public void teardown()
+	{
+		driver.close();
 	}
 }

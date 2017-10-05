@@ -1,5 +1,6 @@
 package SeleniumExamples;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.io.BufferedWriter;		
 import java.io.File;		
@@ -18,7 +19,7 @@ public class addcookies
     @Test
     public  void cookies()					
     {		
-            System.setProperty("webdriver.chrome.driver","C:/akshay/chromedriver.exe");					
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");					
     		driver=new ChromeDriver();  
     		driver.manage().window().maximize();
 			driver.get("http://flipkart.com");
@@ -52,6 +53,14 @@ public class addcookies
         {		
             ex.printStackTrace();			
         }		
-    }		
+    }	
+    
+
+	@AfterTest
+	public void teardown()
+	{
+		driver.close();
+	}
+    
 }
 

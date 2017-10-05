@@ -37,6 +37,7 @@ public class HighLightMe {
   WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Home')]"));
   //Function call to Highlight the element
   fnHighlightMe(driver,element);
+  driver.quit();
  }
 
  public static void fnHighlightMe(WebDriver driver,WebElement element) throws InterruptedException{
@@ -45,8 +46,8 @@ public class HighLightMe {
    for (int iCnt = 0; iCnt < 3; iCnt++) {
       //Execute javascript
          js.executeScript("arguments[0].style.border='4px groove green'", element);
-         Thread.sleep(1000);
-         js.executeScript("arguments[0].style.border=''", element);
+         Thread.sleep(2000);
+         js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
    }
  }
  

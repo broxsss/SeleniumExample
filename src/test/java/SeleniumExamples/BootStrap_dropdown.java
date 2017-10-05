@@ -1,5 +1,6 @@
 package SeleniumExamples;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,16 +14,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class BootStrap {
-
+public class BootStrap_dropdown {
+	WebDriver driver;
 	@Test
 	public void Bootstrapfun() throws InterruptedException{
 
-		System.setProperty("webdriver.chrome.driver","C:/akshay/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions options = new ChromeOptions();
-		WebDriver driver;
+		
 		options.addArguments("--disable-infobars");
 
 		options.setExperimentalOption("prefs", prefs);
@@ -48,6 +49,12 @@ public class BootStrap {
 		
 
 	}
+	@AfterTest
+	public void teardown()
+	{
+		driver.close();
+	}
+	
 }
 
 

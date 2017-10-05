@@ -3,9 +3,9 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="false">
     <classes>
-      <class name="com.Git.com.EGIT.Chrome">
+      <class name="SeleniumExamples.robot_upload">
         <methods>
-          <include name="chorme"/>
+          <include name="upload"/>
         </methods>
       </class>
     </classes>

@@ -2,53 +2,23 @@ package SeleniumExamples;
 
 import java.util.List;
 import java.util.Map;
+
+import static io.restassured.RestAssured.given;
+
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
- 
-import java.net.URL;
- 
+import java.net.URL; 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
- 
-import java.util.Iterator;
- 
-import java.util.NoSuchElementException;
- 
-import java.util.Set;
- 
-import java.util.concurrent.TimeUnit;
- 
 import org.openqa.selenium.By;
- 
-import org.openqa.selenium.JavascriptExecutor;
- 
-import org.openqa.selenium.Keys;
- 
 import org.openqa.selenium.WebDriver;
- 
-import org.openqa.selenium.WebDriver.Navigation;
- 
-import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.restassured.response.Response;
+
 import org.openqa.selenium.WebElement;
- 
-import org.openqa.selenium.firefox.FirefoxDriver;
- 
-import org.openqa.selenium.firefox.FirefoxProfile;
- 
-import org.openqa.selenium.support.ui.*;
- 
-import com.google.common.base.Function;
- 
-import com.google.common.base.Predicate;
- 
-//import Selenium.utils.*;
- 
-//import org.openqa.selenium.*;
- 
-//import org.openqa.selenium.firefox.*;
+
+
  
 public class Brokenlinks {
  
@@ -115,12 +85,26 @@ public class Brokenlinks {
 		}  				
  
 	}
+	
+	public static String isLinkBroke(String url) throws Exception
+	 
+	{
+		
+		//System.out.println("\""+url+"\"");
+		Response res = given().when().get(url);
+    	 
+		
+		
+		
+		return res.getStatusLine();
  
+	
+	}
 	public static void main(String[] args) throws Exception {
  
 		// TODO Auto-generated method stub
  
-		System.setProperty("webdriver.chrome.driver","C:/akshay/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions options = new ChromeOptions();
@@ -132,9 +116,7 @@ public class Brokenlinks {
 		ff.manage().window().maximize();
 			ff.get("http://toolsqa.wpengine.com/automation-practice-switch-windows/");
  
-			//ff.get("http://www.yahoo.com/");		    
- 
-		    List<WebElement> allImages = findAllLinks(ff);    
+			 List<WebElement> allImages = findAllLinks(ff);    
  
 		    System.out.println("Total number of elements found " + allImages.size());
  
@@ -143,10 +125,10 @@ public class Brokenlinks {
 		    	try
  
 		    	{
+		    		//System.out.println(element.getAttribute("href"));
+			       // System.out.println("URL: " + element.getAttribute("href")+ " returned " + isLinkBroken(new URL(element.getAttribute("href"))));
  
-			        System.out.println("URL: " + element.getAttribute("href")+ " returned " + isLinkBroken(new URL(element.getAttribute("href"))));
- 
-		    		//System.out.println("URL: " + element.getAttribute("outerhtml")+ " returned " + isLinkBroken(new URL(element.getAttribute("href"))));
+		    		System.out.println("URL: " + element.getAttribute("href")+ " returned " + isLinkBroke(element.getAttribute("href")));
  
 		    	}
  

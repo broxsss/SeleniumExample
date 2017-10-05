@@ -40,6 +40,8 @@ public void TestPopUp() throws InterruptedException{
 
 // Load app
 driver.get("http://www.naukri.com/");
+System.out.println(System.getProperty("my.value"));
+System.out.println(System.getProperty("buildDirectory"));
 
 // It will return the parent window name as a String
 String parent=driver.getWindowHandle();
@@ -95,7 +97,7 @@ actions.click(element).build().perform();
 
 WebElement elem = driver.findElement(By.xpath("//button[@id='qsbFormBtn']"));
 actions.click(elem).build().perform();
-
+driver.quit();
 
 }
 }

@@ -1,6 +1,7 @@
 package SeleniumExamples;
 
-	import java.util.HashMap;
+	import java.awt.List;
+import java.util.HashMap;
 	import java.util.Map;
     import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
@@ -9,11 +10,12 @@ package SeleniumExamples;
 	import org.openqa.selenium.chrome.ChromeOptions;
     import org.openqa.selenium.interactions.Actions;
     import org.openqa.selenium.remote.DesiredCapabilities;
-    import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
 	
 	public class Action {
-		
-	
+		WebDriver driver;
+		IframeGeneric iframe = new IframeGeneric();
 	@Test
 		public void check_action() throws InterruptedException{
 
@@ -21,7 +23,7 @@ package SeleniumExamples;
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions option = new ChromeOptions();
-		WebDriver driver;
+		
 		option.addArguments("test-type");
 		option.addArguments("--disable-geolocation");
 		option.addArguments("--disable-infobars");
@@ -32,18 +34,50 @@ package SeleniumExamples;
 		capabilities.setCapability(ChromeOptions.CAPABILITY, option);
 		driver = new ChromeDriver(capabilities);
 		driver.manage().window().maximize();
-		//driver.get("http://www.naukri.com");
-		// Type something on Skill textbox
-		driver.get("http://www.google.com");
+		
+		driver.get("http://jqueryui.com/draggable/");
+		String parentWindow = driver.getWindowHandle();
+		System.out.println("parentWindow     ::::"+parentWindow);
 			driver.manage().window().maximize();
 			Thread.sleep(5000);
+			int size = driver.findElements(By.tagName("iframe")).size();
+		    System.out.println("Total Frames --" + size);
 			Actions act=new Actions(driver);
-			act.contextClick().perform();
+			int num = iframe.findframenumber(driver,By.className("demo-frame"));
+			System.out.println("iframe : "+num);
+			driver.switchTo().frame(0);
+			WebElement drag =driver.findElement(By.xpath("//*[@id='draggable']"));
+			System.out.println(driver.findElement(By.id("draggable")).getLocation());
+			System.out.println(driver.findElement(By.xpath("//*[@id='draggable']/p")).getText());
+			Thread.sleep(4000);
+			act.clickAndHold(drag).moveByOffset(33,33).build().perform();
+			Thread.sleep(4000);
+			driver.switchTo().parentFrame();
+			//driver.switchTo().window(parentWindow);
+			//driver.switchTo().defaultContent();
 			driver.quit();
+			driver = new ChromeDriver(capabilities);
+			driver.manage().window().maximize();
+			driver.get("http://jqueryui.com/droppable/");
+			int number = iframe.findframenumber(driver,By.className("demo-frame"));
+			System.out.println("iframe : "+number);
+			driver.switchTo().frame(0);
+			Thread.sleep(3000);
+			Actions acts=new Actions(driver);
+			acts.dragAndDrop(driver.findElement(By.xpath(".//*[@id='draggable']")), driver.findElement(By.xpath(".//*[@id='droppable']"))).build().perform();
+			Thread.sleep(3000);
+			driver.switchTo().defaultContent();
+			
+			
 		}
 
-		
-		
-		
+	@AfterTest
+	public void teardown()
+	{
+		driver.close();
+	}
+	
+	
+	
 	}
 

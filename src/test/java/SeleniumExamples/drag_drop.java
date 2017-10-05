@@ -1,5 +1,6 @@
 package SeleniumExamples;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.awt.AWTException;
 import java.util.HashMap;
@@ -17,12 +18,12 @@ import org.testng.annotations.Test;
 public class drag_drop {
 
 	
-	
+	WebDriver driver;
 	
 	@Test
 	public void dragNdrop() throws InterruptedException, AWTException
 	{
-		System.setProperty("webdriver.chrome.driver","C:/akshay/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");
 		Map<String,Object> prefs = new HashMap<String,Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions option = new ChromeOptions();
@@ -30,7 +31,7 @@ public class drag_drop {
 		option.addArguments("--disable-geolocation");
 		option.addArguments("test-type");
 		option.setExperimentalOption("prefs", prefs);
-		WebDriver driver = new ChromeDriver(option);
+		driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	    driver.manage().window().maximize();
@@ -52,6 +53,12 @@ public class drag_drop {
 	 
 	// this will drag element to destination
 	act.dragAndDrop(drag, drop).build().perform();
-	driver.quit();
+	Thread.sleep(3000);
+	
 }
+	@AfterTest
+	public void teardown()
+	{
+		driver.close();
+	}
 }
