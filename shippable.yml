@@ -1,0 +1,6 @@
+language: java
+build:
+  ci: 
+    - echo "Running build..."
+    - java -version
+    - mvn test
