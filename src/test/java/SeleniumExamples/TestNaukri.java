@@ -20,7 +20,7 @@ public class TestNaukri {
 
 @Test
 public void TestPopUp() throws InterruptedException{
-	System.setProperty("webdriver.chrome.driver","C:/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","/Users/akshaykumarsaini/SeleniumExample/chromedriver");
 	Map<String, Object> prefs = new HashMap<String, Object>();
 	prefs.put("profile.default_content_setting_values.notifications", 2);
 	prefs.put("profile.default_content_settings.geolocation", 1);
