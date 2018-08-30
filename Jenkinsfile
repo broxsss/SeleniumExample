@@ -24,7 +24,10 @@ pipeline {
             steps {
                 
                 git credentialsId: 'broxsss', url: 'https://github.com/broxsss/SeleniumExample.git' , branch: 'master'
-                git credentialsId: 'github', url: 'git@github.com:broxsss/${envRepoPath}.git', branch: 'master'
+                
+            }
+            steps {
+                
                 sh "chmod 0400 /Users/akshaykumarsaini/.ssh/id_rsa_broxssshub"
                 sh "ssh-agent bash -c 'ssh-add /Users/akshaykumarsaini/.ssh/id_rsa_broxssshub; git clone git@github.com:broxsss/${envRepoPath}.git -b master'"
             }
