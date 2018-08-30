@@ -23,7 +23,8 @@ pipeline {
         stage('Fetching the repositories without RSA') {
             steps {
                 
-                git credentialsId: 'broxsss', url: 'https://github.com/broxsss/SeleniumGrid.git' , branch: 'master'
+                git credentialsId: 'broxsss', url: 'https://github.com/broxsss/SeleniumExample.git' , branch: 'master'
+                sh 'mvn test'
                 
             }
         }
