@@ -24,7 +24,7 @@ public class Chrome {
 	public void chorme()
 	{
 
-		System.setProperty("webdriver.chrome.driver","C:/akshay/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/Users/akshaykumarsaini/Desktop/chromedriver");
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions options = new ChromeOptions();

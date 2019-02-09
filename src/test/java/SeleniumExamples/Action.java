@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 	@Test
 		public void check_action() throws InterruptedException{
 
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//driver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/Users/akshaykumarsaini/Desktop/chromedriver");
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
 		ChromeOptions option = new ChromeOptions();
@@ -66,6 +66,7 @@ import org.testng.annotations.Test;
 			Actions acts=new Actions(driver);
 			acts.dragAndDrop(driver.findElement(By.xpath(".//*[@id='draggable']")), driver.findElement(By.xpath(".//*[@id='droppable']"))).build().perform();
 			Thread.sleep(3000);
+			//acts.keyDown(Keys.)
 			driver.switchTo().defaultContent();
 			
 			
